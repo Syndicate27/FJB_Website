@@ -55,6 +55,81 @@ body {
 	background-color: ;	
 }
 
+h2 {
+	width: 1200px;
+	margin:35px 160px;
+	padding: 0;
+	text-align: center;
+	display: block;
+	border: groove;
+	background-color: cyan;
+}
+#info_form {
+	width: 1200px;
+	margin:35px 160px;
+	padding: 0;
+	text-align: center;
+	display: block;
+	border: groove;
+	background-color: none;
+
+}
+#fname {		
+	width: 200px;
+	height: 17px;
+	text-align: left;
+	margin: 10px;
+}
+#lname {
+	width: 200px;
+	height: 17px;
+	text-align: left;
+	margin: 10px;
+}
+#email {
+	width: 200px;
+	height: 17px;
+	text-align: left;
+	margin: 10px;
+}
+#message {
+	width: 500px;
+	height: 100px;
+	text-align: top-left;
+	margin: 10px;
+}
+footer {
+	position: fixed;
+	width: 1200px;
+	bottom:0;
+	margin:0px 160px; 
+	height: 40px; 
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	float: bottom;
+	text-align: center;
+	
+}
+
+footer text {
+	color: white;/*Colors text within our footer section*/
+}
+	background-position: none; /*Only one image so we do not need to define a position*/
+	background-repeat: repeat;
+	background-size: 1700px;
+}
+
+.b_container {
+	/* Here we will set the boundaries for the rest of our website content*/
+	width: 1200px;
+	margin:35px 160px;
+	padding: 0;
+	display: block;
+	border: solid;
+	background-color: ;	
+}
+
 
 
 h2 {
