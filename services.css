@@ -1,32 +1,65 @@
 
+/* Layout for entire webpage */
+html.layout {
+	background-image: url(img2_bw.png);
+	background-position: none; /*Only one image so we do not need to define a position*/
+	background-repeat: repeat;
+	background-size: 1500px;
+	margin-right:160px;
+	margin-left:160px;
+	padding: 0px;
+	width: 1200px;
+	height: auto;
+	font-family: Georgia, Times;
+}
+/* End of Layout for entire webpage */
+
+/* Begin Title Head */
+
+h3#title_head {
+	background-color: #334;
+	margin-top: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	font-size: 50px;
+	margin-bottom: 0px;
+	color: gold;
+	height: 100px;
+	text-align: right;
+	padding-top:50px;
+	padding-right: 50px;
+	border-left: black 4px solid;
+
+}
+
+
 /*To create our vertical navigation bar we must use floating or inline list items*/
-ul {
+ul#navbar {
 	list-style-type: none; /*removes the bullets*/
-	margin: 0px 160px;
+	margin-top: 0px;
 	padding: 0px;
 	/*removes defaults set by web browser*/
 	background-color: #333;
 	/*We add the background color to 'ul' to keep nav bar color with no breaks*/
 	overflow: hidden;
 	/*below are css attributes to have our navbar fixed at the top*/
-	position: fixed;
-	top: 0;
+	position: relative;
 	width: 1200px;
 	text-align: center;/*Centers text*/
-	border: solid;
-	height: auto;
-	
+	border: solid 4px;
+	height: 30px;
+
 }
+
 
 li {
 	display: inline; /* This will make our nav bar horizontal*/
 }
 
 li a {
-	font-size: 24px;
-	padding: 10px;
+	font-size: 20px;
 	color: white;
-	padding: 14px 80px;
+	padding: 14px 60px;
 	text-decoration: none; /*removes underline for 'li'*/
 }
 
@@ -38,63 +71,56 @@ li a:hover {
 	background-color: #111;
 	/*background color of nav with mouse over will change color*/
 }
-/*This will be setting our full page background image*/
-body {
-	background-image: url(img2.png);
-	background-position: none; /*Only one image so we do not need to define a position*/
-	background-repeat: repeat;
-	background-size: 2000px;
-}
+/* Begin Body Desription of containers */
 
-.b_container {
-	/* Here we will set the boundaries for the rest of our website content*/
+div.containers {
 	width: 1200px;
-	margin:35px 160px;
-	padding: 0;
-	display: block;
-	border: solid;
-	background-color: ;	
-}
-
-p { /*Where our services Image page will be uploaded*/
-	color: white;
-	font-size: 2em;
-	text-align: center;
-	width: 1200px;
-	margin:35px 160px;
-	padding: 0;
-	display: block;
-	border: solid cyan;
 	height: 300px;
-	background-color: black;
+	text-align: center;
+	background-color: white;
+	font-size: 40px;
+	font-style: italic;
+	border: 5px solid;
+	margin: 0px;
 }
 
-h2 {
+	/*Begin Service Thumbnails */
+	div.services_container {
 	width: 1200px;
-	margin:35px 160px;
-	padding: 0;
-	text-align: center;
-	display: block;
-	border: groove;
-	background-color: cyan;
-}
+	height: 700px;
+	background-color: #333;
+	opacity: .8;
+	font-size: 40px;
+	font-style: italic;
+	border: 5px solid gold;
+	margin: 0px;
+	padding: auto;
+	color: white;
+	margin-top: 10px;
+	}
+	div.square {
+		border: 4px white groove;
+		width: 300px;
+		height: 300px;
+		float: left;
+		margin: 20px;
+		margin-left: 55px;
+	}
 footer {
-	position: fixed;
-	width: 1200px;
-	bottom:0;
-	margin:0px 160px; 
+	position: static;
+	width: 1200px; 
 	height: 40px; 
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
-	float: bottom;
 	text-align: center;
-	
-}
-
-footer text {
+	border: groove white;
+	margin-top: 1000px; 
+	margin-bottom: 0px;
 	color: white;/*Colors text within our footer section*/
 }
+
+
 
 
 
